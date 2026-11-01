@@ -2256,7 +2256,7 @@ export default {
   'Pick a time': 'Wybierz czas',
   'Rest between sides': 'Przerwa między stronami',
   'Rest between warm-ups': 'Przerwa między seriami rozgrzewkowymi',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'Rozgrzewka jest lekka, więc może mieć krótszą przerwę albo żadną. Ostatnia i tak dostaje pełną przerwę przed pierwszą serią roboczą.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'Rozgrzewki są lekkie, więc przerwa może być krótsza albo żadna. Ustawiony czas obowiązuje też przed pierwszą serią roboczą; bez minutnika ostatnia ma pełną przerwę.',
   // --- progress photos for any day (#557) ---
   'Add photos': 'Dodaj zdjęcia',
   'Each photo goes on the day it was taken.': 'Każde zdjęcie trafia na dzień, w którym zostało zrobione.',
@@ -2348,7 +2348,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'Większość ćwiczeń w bibliotece używa „{0}”, kilka „{1}”. Krótki gryf wszędzie to ustawienie obu.',
   'Back to the standard bars': 'Wróć do standardowych gryfów',
   'Standard bars. Tap if yours are lighter.': 'Standardowe gryfy. Stuknij, jeśli twoje są lżejsze.',
-  'The last warm-up still gets the full rest before your first work set.': 'Ostatnia seria rozgrzewkowa i tak dostaje pełną przerwę przed pierwszą serią roboczą.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'Ustawiony czas obowiązuje też przed pierwszą serią roboczą. Bez minutnika ostatnia rozgrzewka ma pełną przerwę.',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'Dni w tygodniu',
   'Hours': 'Godziny',

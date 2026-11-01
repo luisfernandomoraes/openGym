@@ -2256,7 +2256,7 @@ export default {
   'Pick a time': '选择时长',
   'Rest between sides': '两侧之间的休息',
   'Rest between warm-ups': '热身组之间的休息',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': '热身组较轻，可以少休息或不休息。最后一个热身组在第一个正式组前仍会得到完整的休息。',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': '热身较轻，可以少休息或不休息。设定的时间也适用于第一组正式组之前；不设计时器时，最后一组热身后完整休息。',
   // --- progress photos for any day (#557) ---
   'Add photos': '添加照片',
   'Each photo goes on the day it was taken.': '每张照片都会放到拍摄当天。',
@@ -2348,7 +2348,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': '动作库里大多数动作用「{0}」，少数用「{1}」。想全部用短杆，两个都要设。',
   'Back to the standard bars': '恢复标准杠铃杆',
   'Standard bars. Tap if yours are lighter.': '标准杠铃杆。如果你的更轻，点这里。',
-  'The last warm-up still gets the full rest before your first work set.': '最后一组热身仍会在第一组正式组前完整休息。',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': '设定的时间也适用于第一组正式组之前。不设计时器时，最后一组热身后完整休息。',
   // --- Coach intake: days and session wheels ---
   'Days per week': '每周天数',
   'Hours': '小时',

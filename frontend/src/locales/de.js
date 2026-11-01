@@ -2276,7 +2276,7 @@ export default {
   'Pick a time': 'Zeit wählen',
   'Rest between sides': 'Pause zwischen den Seiten',
   'Rest between warm-ups': 'Aufwärmpausen',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'Aufwärmsätze sind leicht, da reicht weniger Pause oder gar keine. Der letzte bekommt trotzdem die volle Pause vor dem ersten Arbeitssatz.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'Aufwärmsätze sind leicht und brauchen weniger oder gar keine Pause. Eine Zeit gilt auch vor deinem ersten Arbeitssatz; ohne Timer bekommt der letzte die volle Pause.',
   // --- progress photos for any day (#557) ---
   'Add photos': 'Fotos hinzufügen',
   'Each photo goes on the day it was taken.': 'Jedes Foto landet an dem Tag, an dem es gemacht wurde.',
@@ -2368,7 +2368,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'Die meisten Übungen in der Bibliothek nutzen „{0}“, ein paar „{1}“. Für eine kurze Stange überall stellst du beide ein.',
   'Back to the standard bars': 'Zurück zu den Standardstangen',
   'Standard bars. Tap if yours are lighter.': 'Standardstangen. Tippe, wenn deine leichter sind.',
-  'The last warm-up still gets the full rest before your first work set.': 'Der letzte Aufwärmsatz bekommt trotzdem die volle Pause vor deinem ersten Arbeitssatz.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'Eine Zeit gilt auch vor deinem ersten Arbeitssatz. Ohne Timer bekommt das letzte Aufwärmen die volle Pause.',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'Tage pro Woche',
   'Hours': 'Stunden',

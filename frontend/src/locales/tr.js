@@ -2256,7 +2256,7 @@ export default {
   'Pick a time': 'Süre seç',
   'Rest between sides': 'Taraflar arası dinlenme',
   'Rest between warm-ups': 'Isınma setleri arası dinlenme',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'Isınma setleri hafif, o yüzden daha az ya da hiç dinlenmeyebilir. Sonuncusu yine de ilk çalışma setinden önce tam dinlenmeyi alır.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'Isınmalar hafiftir, bu yüzden daha az dinlenebilir veya hiç dinlenmeyebilirsin. Belirlenen süre ilk çalışma setinden önce de geçerlidir; zamanlayıcı yoksa son ısınmadan sonra tam dinlenme verilir.',
   // --- progress photos for any day (#557) ---
   'Add photos': 'Fotoğraf ekle',
   'Each photo goes on the day it was taken.': 'Her fotoğraf çekildiği güne gider.',
@@ -2348,7 +2348,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'Kütüphanedeki çoğu egzersiz “{0}”, birkaçı “{1}” kullanır. Her yerde kısa bar için ikisini de ayarla.',
   'Back to the standard bars': 'Standart barlara dön',
   'Standard bars. Tap if yours are lighter.': 'Standart barlar. Seninkiler daha hafifse dokun.',
-  'The last warm-up still gets the full rest before your first work set.': 'Son ısınma seti yine de ilk çalışma setinden önce tam dinlenmeyi alır.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'Belirlenen süre ilk çalışma setinden önce de geçerlidir. Zamanlayıcı yoksa son ısınmadan sonra tam dinlenme verilir.',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'Haftada kaç gün',
   'Hours': 'Saat',

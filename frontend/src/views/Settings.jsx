@@ -491,7 +491,7 @@ export default function Settings({ page = null, find = null, via = null, entryKe
   const warmAll = typeof S.warmupRestSec === 'number' ? S.warmupRestSec : null
   const setWarm = v => update(s => { if (v === null) delete s.warmupRestSec; else s.warmupRestSec = v })
   const warmupRestRow = <Row icon="timer" iconTint="var(--yellow)" title={t('Rest between warm-ups')} accessory="chevron"
-    subtitle={t('The last warm-up still gets the full rest before your first work set.')}
+    subtitle={t('A time also applies before your first work set. With no timer, the last warm-up gets the full rest.')}
     value={warmAll === null ? t('Like the work sets') : warmAll > 0 ? fmtRest(warmAll) : t('No timer')}
     onClick={() => menuSheet({
       title: t('Rest between warm-ups'),

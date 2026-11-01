@@ -1439,7 +1439,7 @@ export const PT_BR_OVERRIDES = {
   // --- progress photos: remove ---
   // --- set-specific rest ---
   'No timer': 'Sem cronômetro',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'O aquecimento é leve, então pode descansar menos ou nada. O último continua tendo o descanso completo antes da sua primeira série de trabalho.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'Os aquecimentos são leves, então podem descansar menos ou nada. O tempo também vale antes da primeira série de trabalho; sem timer, o último tem o descanso completo.',
   // --- progress photos for any day (#557) ---
   'No progress photos yet. Add one for today or any day before.': 'Ainda não há fotos de progresso. Adicione uma para hoje ou para um dia anterior.',
   'The photo says it was taken on {0}. Change the day if it was another one.': 'A foto diz que foi tirada em {0}. Mude o dia se foi outro.',
@@ -1504,7 +1504,7 @@ export const PT_BR_OVERRIDES = {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'A maioria dos exercícios da biblioteca usa “{0}”, alguns usam “{1}”. Para uma barra curta em todos, defina as duas.',
   'Back to the standard bars': 'Voltar às barras padrão',
   'Standard bars. Tap if yours are lighter.': 'Barras padrão. Toque se as suas forem mais leves.',
-  'The last warm-up still gets the full rest before your first work set.': 'O último aquecimento continua tendo o descanso completo antes da sua primeira série de trabalho.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'O tempo também vale antes da primeira série de trabalho. Sem timer, o último aquecimento tem o descanso completo.',
   // --- import with no account: workouts on this device ---
   'This device has 1 workout that is not in this backup. Replacing deletes it.': 'Este dispositivo tem 1 treino que não está neste backup. Substituir exclui esse treino.',
   'This device has {0} workouts that are not in this backup. Replacing deletes them.': 'Este dispositivo tem {0} treinos que não estão neste backup. Substituir exclui esses treinos.',

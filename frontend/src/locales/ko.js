@@ -2256,7 +2256,7 @@ export default {
   'Pick a time': '시간 고르기',
   'Rest between sides': '좌우 사이 휴식',
   'Rest between warm-ups': '워밍업 세트 사이 휴식',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': '워밍업은 가벼우니 짧게 쉬거나 안 쉬어도 돼요. 마지막 워밍업 뒤에는 첫 본 세트 전에 원래 휴식을 다 줘요.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': '워밍업은 가벼워서 더 짧게 쉬거나 쉬지 않아도 됩니다. 설정한 시간은 첫 본 세트 전에도 적용되며, 타이머가 없으면 마지막 워밍업 후에는 전체 휴식을 합니다.',
   // --- progress photos for any day (#557) ---
   'Add photos': '사진 추가',
   'Each photo goes on the day it was taken.': '사진마다 찍은 날로 들어가요.',
@@ -2348,7 +2348,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': '라이브러리의 운동 대부분은 “{0}”, 일부는 “{1}”을 써요. 모든 곳에 짧은 바를 쓰려면 둘 다 설정하세요.',
   'Back to the standard bars': '기본 바로 되돌리기',
   'Standard bars. Tap if yours are lighter.': '기본 바. 내 바가 더 가벼우면 탭하세요.',
-  'The last warm-up still gets the full rest before your first work set.': '마지막 워밍업 세트는 그래도 첫 본 세트 전에 전체 휴식을 받아요.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': '설정한 시간은 첫 본 세트 전에도 적용됩니다. 타이머가 없으면 마지막 워밍업 후에는 전체 휴식을 합니다.',
   // --- Coach intake: days and session wheels ---
   'Days per week': '주당 일수',
   'Hours': '시간',

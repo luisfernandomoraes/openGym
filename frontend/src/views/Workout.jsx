@@ -1846,7 +1846,7 @@ function ActiveWorkout() {
       const setRest = { idx, sec: pyramidRestFor(fresh.entries[idx].target, fresh.entries[idx].sets, i) }
       const restSec = restSecFor(fresh.entries, freshUnit || [idx], S.restSec, setRest)
       // A warm-up ramp set may rest shorter than a work set (the exercise's warmupRestSec, else the
-      // profile's); the last ramp set, into the first work set, still gets the working rest.
+      // profile's), the last ramp set included; see warmupRestSecFor.
       // A set given its own rest in its menu (#609) keeps it, whatever the exercise would rest.
       const ownRest = ownSetRest(fresh.entries[idx].sets[setSpanAt(fresh.entries[idx].sets, i)[0]])
       const restAfter = ownRest ?? warmupRestSecFor(fresh.entries[idx], i, restSec, useStore.getState().S.warmupRestSec)

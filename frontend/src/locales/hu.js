@@ -2259,7 +2259,7 @@ export default {
   'Pick a time': 'Idő választása',
   'Rest between sides': 'Pihenő az oldalak között',
   'Rest between warm-ups': 'Pihenő a bemelegítő sorozatok között',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'A bemelegítés könnyű, így kevesebb pihenő is elég, vagy semmi. Az utolsó így is megkapja a teljes pihenőt az első munkasorozat előtt.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'A bemelegítés könnyű, így kevesebb pihenő is elég, vagy akár semennyi. A megadott idő az első munkasorozat előtt is érvényes; időzítő nélkül az utolsó után teljes pihenő jár.',
   // --- progress photos for any day (#557) ---
   'Add photos': 'Fotók hozzáadása',
   'Each photo goes on the day it was taken.': 'Minden fotó arra a napra kerül, amikor készült.',
@@ -2351,7 +2351,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'A könyvtár legtöbb gyakorlata „{0}”, néhány „{1}”. Ha mindenhol rövid rudat akarsz, állítsd be mindkettőt.',
   'Back to the standard bars': 'Vissza a szabványos rudakhoz',
   'Standard bars. Tap if yours are lighter.': 'Szabványos rudak. Koppints, ha a tieid könnyebbek.',
-  'The last warm-up still gets the full rest before your first work set.': 'Az utolsó bemelegítő sorozat így is teljes pihenőt kap az első munkasorozatod előtt.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'A megadott idő az első munkasorozat előtt is érvényes. Időzítő nélkül az utolsó bemelegítés után teljes pihenő jár.',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'Nap hetente',
   'Hours': 'Órák',

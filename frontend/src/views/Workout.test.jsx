@@ -289,7 +289,7 @@ afterEach(async () => {
 })
 
 describe('Workout set completion flow', () => {
-  it('rests the exercise\'s warm-up rest between ramp sets, and its working rest after the last ramp set', async () => {
+  it('rests the exercise\'s warm-up rest after every ramp set, and its working rest after work sets', async () => {
     await mount([exercise('ramped-squat', [false, false, false, false], {
       target: { mode: 'reps', reps: 6, weight: 125, bodyweight: false, restSec: 150, warmupRestSec: 45 },
       sets: [
@@ -302,7 +302,7 @@ describe('Workout set completion flow', () => {
     await toggleSet(0)
     expect(mocks.startRest).toHaveBeenLastCalledWith(45, expect.any(Number), { forSet: expect.any(Number) })
     await toggleSet(1)
-    expect(mocks.startRest).toHaveBeenLastCalledWith(150, expect.any(Number), { forSet: expect.any(Number) })
+    expect(mocks.startRest).toHaveBeenLastCalledWith(45, expect.any(Number), { forSet: expect.any(Number) })
     await toggleSet(2)
     expect(mocks.startRest).toHaveBeenLastCalledWith(150, expect.any(Number), { forSet: expect.any(Number) })
     expect(mocks.startRest).toHaveBeenCalledTimes(3)

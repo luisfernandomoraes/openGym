@@ -130,26 +130,29 @@ export function ownExerciseRest(target) {
  * The rest a completed set earns when it was a warm-up ramp set.
  *
  * Ramp sets are light and short, so an exercise may carry its own `warmupRestSec` in its target
- * next to `restSec`. It applies between ramp sets only: the break after the LAST ramp set, into
- * the first work set, is `workRestSec` (the value restSecFor resolved), because that is the rest
- * the first heavy set actually needs. An exercise without the field falls back to `profileSec`,
- * the profile's warm-up rest (0 = no timer), and without that, like a work set, rests
- * `workRestSec` — exactly what every routine did before either existed.
+ * next to `restSec`. A chosen time also covers the break after the LAST ramp set, into the first
+ * work set: a light warm-up does not tire anyone enough to need the full rest, and with one ramp
+ * set that break is the only one the field could ever shorten. "No timer" stays between ramp sets:
+ * the last one then rests `workRestSec` (the value restSecFor resolved), as does a ramp set
+ * re-checked once work sets are done, with heavy work behind it. An exercise without the field
+ * falls back to `profileSec`, the profile's warm-up rest (0 = no timer), and without that, like a
+ * work set, rests `workRestSec` — exactly what every routine did before either existed.
  */
 export function warmupRestSecFor(entry, setIdx, workRestSec, profileSec) {
   const sets = Array.isArray(entry?.sets) ? entry.sets : []
   const set = sets[setIdx]
   if (!set || !isWarmupRow(set)) return workRestSec
   const next = sets.slice(setIdx + 1).find(s => !s.done)
-  if (!next || !isWarmupRow(next)) return workRestSec
+  if (!next || sets.some(s => s.done && !isWarmupRow(s))) return workRestSec
+  const noTimer = isWarmupRow(next) ? 0 : workRestSec
   // "No timer" between ramp sets: an optional `warmupRestOff` (set in the exercise's settings).
-  if (entry?.target?.warmupRestOff === true) return 0
+  if (entry?.target?.warmupRestOff === true) return noTimer
   const own = Number(entry?.target?.warmupRestSec)
   if (own > 0) return own
   // Then the profile's (Settings > Workout, S.warmupRestSec): 0 is "no timer", absent is like
   // the work sets.
   const all = typeof profileSec === 'number' && Number.isFinite(profileSec) ? Math.round(profileSec) : null
-  if (all === 0) return 0
+  if (all === 0) return noTimer
   return all > 0 ? all : workRestSec
 }
 

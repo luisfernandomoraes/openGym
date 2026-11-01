@@ -2284,7 +2284,7 @@ export default {
   'Pick a time': 'Välj en tid',
   'Rest between sides': 'Vila mellan sidorna',
   'Rest between warm-ups': 'Vila mellan uppvärmningsset',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'Uppvärmningsset är lätta, så de klarar sig med mindre vila, eller ingen alls. Det sista får ändå full vila före ditt första arbetsset.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'Uppvärmningar är lätta, så de kan vila mindre eller inte alls. Tiden gäller också före ditt första arbetsset; utan timer får den sista full vila.',
 
   // --- progress photos for any day (#557) ---
   'Add photos': 'Lägg till foton',
@@ -2384,7 +2384,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'De flesta lyft i biblioteket använder ”{0}”, några använder ”{1}”. En kort stång för alla betyder att du ställer in båda.',
   'Back to the standard bars': 'Tillbaka till standardstängerna',
   'Standard bars. Tap if yours are lighter.': 'Standardstänger. Tryck om dina är lättare.',
-  'The last warm-up still gets the full rest before your first work set.': 'Det sista uppvärmningssetet får ändå full vila före ditt första arbetsset.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'Tiden gäller också före ditt första arbetsset. Utan timer får den sista uppvärmningen full vila.',
 
   // --- Coach intake: days and session wheels ---
   'Days per week': 'Dagar per vecka',

@@ -2246,7 +2246,7 @@ function ExConfig({ ex, existing, onSave, onDelete, onReplace, close, routine, i
       {t('Rest after each set of this exercise. No timer means no countdown, you go when you’re ready.')}
     </div>
     {/* The warm-ups' own rest: the profile's or like the work sets (no field, as always), no timer,
-        or a time of their own. The last warm-up still rests the full work rest before the first work set. */}
+        or a time of their own, which also covers the break before the first work set. */}
     {!cardio && <>
       <div className="sect-b cfg-rest" style={{ marginBottom: 6 }}>
         <Row icon="timer" iconTint="var(--yellow)" title={t('Rest between warm-ups')} accessory="chevron"
@@ -2264,7 +2264,7 @@ function ExConfig({ ex, existing, onSave, onDelete, onReplace, close, routine, i
           })} />
       </div>
       <div className="small dim" style={{ marginBottom: 18 }}>
-        {t('Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.')}
+        {t('Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.')}
       </div>
     </>}
     {/* The break between the two sides of a per-side set. Without one: none for reps, the short

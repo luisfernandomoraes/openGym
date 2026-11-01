@@ -2335,7 +2335,7 @@ export default {
   'Pick a time': 'সময় বেছে নিন',
   'Rest between sides': 'দুই দিকের মাঝে বিশ্রাম',
   'Rest between warm-ups': 'ওয়ার্ম-আপের মাঝে বিশ্রাম',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'ওয়ার্ম-আপ হালকা, তাই বিশ্রাম কম বা একেবারেই না হলেও চলে। শেষটি প্রথম কাজের সেটের আগে পুরো বিশ্রাম পায়।',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'ওয়ার্ম-আপ হালকা, তাই বিশ্রাম কম বা একেবারে না-ও হতে পারে। নির্ধারিত সময় প্রথম ওয়ার্ক সেটের আগেও প্রযোজ্য; টাইমার না থাকলে শেষ ওয়ার্ম-আপে পুরো বিশ্রাম মিলবে।',
   // --- progress photos for any day (#557) ---
   'Add photos': 'ছবি যোগ করুন',
   'Each photo goes on the day it was taken.': 'প্রতিটি ছবি সেই দিনে যাবে যেদিন তোলা হয়েছিল।',
@@ -2427,7 +2427,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'লাইব্রেরির বেশিরভাগ ব্যায়াম “{0}” ব্যবহার করে, কয়েকটি “{1}”। সবখানে ছোট বারের জন্য দুটোই সেট করুন।',
   'Back to the standard bars': 'স্ট্যান্ডার্ড বারে ফিরে যান',
   'Standard bars. Tap if yours are lighter.': 'স্ট্যান্ডার্ড বার। আপনারগুলো হালকা হলে ট্যাপ করুন।',
-  'The last warm-up still gets the full rest before your first work set.': 'শেষ ওয়ার্ম-আপ সেট তবুও প্রথম কাজের সেটের আগে পুরো বিশ্রাম পায়।',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'নির্ধারিত সময় প্রথম ওয়ার্ক সেটের আগেও প্রযোজ্য। টাইমার না থাকলে শেষ ওয়ার্ম-আপে পুরো বিশ্রাম মিলবে।',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'সপ্তাহে কত দিন',
   'Hours': 'ঘণ্টা',

@@ -2256,7 +2256,7 @@ export default {
   'Pick a time': 'समय चुनें',
   'Rest between sides': 'दोनों तरफ़ के बीच आराम',
   'Rest between warm-ups': 'वॉर्म-अप के बीच आराम',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'वॉर्म-अप हल्के होते हैं, इसलिए आराम कम या बिल्कुल नहीं भी चलेगा। आख़िरी वॉर्म-अप को पहले वर्क सेट से पहले पूरा आराम मिलता है।',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'वॉर्म-अप हल्के होते हैं, इसलिए आराम कम या बिल्कुल नहीं हो सकता। तय समय पहले वर्क सेट से पहले भी लागू होता है; बिना टाइमर के आखिरी वॉर्म-अप को पूरा आराम मिलता है।',
   // --- progress photos for any day (#557) ---
   'Add photos': 'फ़ोटो जोड़ें',
   'Each photo goes on the day it was taken.': 'हर फ़ोटो उसी दिन पर जाएगी जिस दिन ली गई थी।',
@@ -2348,7 +2348,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'लाइब्रेरी की ज़्यादातर एक्सरसाइज़ “{0}” इस्तेमाल करती हैं, कुछ “{1}”। हर जगह छोटी बार के लिए दोनों सेट करें।',
   'Back to the standard bars': 'स्टैंडर्ड बार पर वापस जाएँ',
   'Standard bars. Tap if yours are lighter.': 'स्टैंडर्ड बार। आपकी हल्की हैं तो टैप करें।',
-  'The last warm-up still gets the full rest before your first work set.': 'आख़िरी वार्म-अप सेट को फिर भी पहले वर्क सेट से पहले पूरा आराम मिलता है।',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'तय समय पहले वर्क सेट से पहले भी लागू होता है। बिना टाइमर के आखिरी वॉर्म-अप को पूरा आराम मिलता है।',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'हफ़्ते में दिन',
   'Hours': 'घंटे',

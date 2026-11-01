@@ -2311,7 +2311,7 @@ export default {
   'Pick a time': 'اختر مدة',
   'Rest between sides': 'الاستراحة بين الجانبين',
   'Rest between warm-ups': 'الاستراحة بين مجموعات الإحماء',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'مجموعات الإحماء خفيفة، فيمكن أن تكون استراحتها أقصر أو بلا استراحة. آخرها يحصل على الاستراحة الكاملة قبل أول مجموعة عمل.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'الإحماء خفيف، لذا يمكن أن تكون الراحة أقل أو بدونها. ينطبق الوقت أيضًا قبل أول مجموعة عمل؛ وبدون مؤقت، يحصل آخر إحماء على الراحة الكاملة.',
   // --- progress photos for any day (#557) ---
   'Add photos': 'إضافة صور',
   'Each photo goes on the day it was taken.': 'كل صورة تذهب إلى اليوم الذي التُقطت فيه.',
@@ -2403,7 +2403,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'معظم تمارين المكتبة تستخدم «{0}»، وبعضها «{1}». لبار قصير في كل مكان، اضبط الاثنين.',
   'Back to the standard bars': 'العودة إلى البارات القياسية',
   'Standard bars. Tap if yours are lighter.': 'بارات قياسية. اضغط إذا كانت باراتك أخف.',
-  'The last warm-up still gets the full rest before your first work set.': 'آخر مجموعة إحماء تحصل مع ذلك على الراحة الكاملة قبل أول مجموعة عمل.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'ينطبق الوقت أيضًا قبل أول مجموعة عمل. وبدون مؤقت، يحصل آخر إحماء على الراحة الكاملة.',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'أيام في الأسبوع',
   'Hours': 'الساعات',

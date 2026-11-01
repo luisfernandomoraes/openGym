@@ -2256,7 +2256,7 @@ export default {
   'Pick a time': 'Scegli un tempo',
   'Rest between sides': 'Recupero tra i lati',
   'Rest between warm-ups': 'Recupero tra i riscaldamenti',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'Il riscaldamento è leggero, quindi può recuperare meno o per niente. L’ultimo ha comunque il recupero pieno prima della prima serie allenante.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'I riscaldamenti sono leggeri, quindi possono recuperare meno o per niente. Il tempo vale anche prima della prima serie di lavoro; senza timer, l’ultimo ha il recupero completo.',
   // --- progress photos for any day (#557) ---
   'Add photos': 'Aggiungi foto',
   'Each photo goes on the day it was taken.': 'Ogni foto va nel giorno in cui è stata scattata.',
@@ -2348,7 +2348,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'La maggior parte degli esercizi della libreria usa «{0}», alcuni «{1}». Per un bilanciere corto ovunque, imposta entrambi.',
   'Back to the standard bars': 'Torna ai bilancieri standard',
   'Standard bars. Tap if yours are lighter.': 'Bilancieri standard. Tocca se i tuoi sono più leggeri.',
-  'The last warm-up still gets the full rest before your first work set.': 'L’ultima serie di riscaldamento ha comunque il recupero pieno prima della tua prima serie allenante.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'Il tempo vale anche prima della prima serie di lavoro. Senza timer, l’ultimo riscaldamento ha il recupero completo.',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'Giorni a settimana',
   'Hours': 'Ore',

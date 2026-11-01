@@ -184,8 +184,19 @@ describe('warmupRestSecFor', () => {
     expect(warmupRestSecFor(ramp(45), 0, 150)).toBe(45)
   })
 
-  it('rests the working rest after the last ramp set, into the first work set', () => {
-    expect(warmupRestSecFor(ramp(45), 1, 150)).toBe(150)
+  it('rests the warm-up rest after the last ramp set too, into the first work set', () => {
+    expect(warmupRestSecFor(ramp(45), 1, 150)).toBe(45)
+    expect(warmupRestSecFor(ramp(null), 1, 150, 30)).toBe(30)
+  })
+
+  it('shortens the one break a single warm-up set has, before the first work set', () => {
+    const one = { target: { restSec: 180, warmupRestSec: 60 }, sets: [{ phase: 'warmup', done: false }, { phase: 'work', done: false }, { phase: 'work', done: false }] }
+    expect(warmupRestSecFor(one, 0, 180)).toBe(60)
+  })
+
+  it('"no timer" stays between ramp sets: the last one rests the working rest', () => {
+    expect(warmupRestSecFor(ramp(null), 1, 150, 0)).toBe(150)
+    expect(warmupRestSecFor({ target: { warmupRestOff: true }, sets: ramp(null).sets }, 1, 150)).toBe(150)
   })
 
   it('rests the working rest after a work set', () => {
@@ -198,8 +209,16 @@ describe('warmupRestSecFor', () => {
     expect(warmupRestSecFor({ target: { warmupRestSec: 0 }, sets: ramp(null).sets }, 0, 90)).toBe(90)
   })
 
-  it('looks at the next UNFINISHED set: a ramp set re-checked after the work began rests the working rest', () => {
-    expect(warmupRestSecFor(ramp(45, [true, true, false, false]), 0, 150)).toBe(150)
+  it('looks at the next UNFINISHED set: a ramp set re-checked with no work done yet rests the warm-up rest', () => {
+    expect(warmupRestSecFor(ramp(45, [true, true, false, false]), 0, 150)).toBe(45)
+  })
+
+  it('a ramp set re-checked after a work set rests the working rest, with heavy work behind it', () => {
+    expect(warmupRestSecFor(ramp(45, [true, true, true, false]), 0, 150)).toBe(150)
+  })
+
+  it('a ramp set that leaves nothing unfinished rests the working rest, into the next exercise', () => {
+    expect(warmupRestSecFor(ramp(45, [true, true, true, true]), 0, 150)).toBe(150)
   })
 
   // Discord (seals187): one warm-up rest for the whole profile, S.warmupRestSec.

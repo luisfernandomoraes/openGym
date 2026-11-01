@@ -2253,7 +2253,7 @@ export default {
   'Pick a time': 'Вибрати час',
   'Rest between sides': 'Відпочинок між боками',
   'Rest between warm-ups': 'Відпочинок між розминковими підходами',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'Розминка легка, тож відпочивати можна менше або зовсім ні. Після останньої розминки все одно буде повний відпочинок перед першим робочим підходом.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'Розминка легка, тому відпочинок може бути коротшим або його може не бути. Заданий час діє і перед першим робочим підходом; без таймера після останньої розминки буде повний відпочинок.',
   // --- progress photos for any day (#557) ---
   'Add photos': 'Додати фото',
   'Each photo goes on the day it was taken.': 'Кожне фото потрапить у день, коли його зроблено.',
@@ -2345,7 +2345,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'Більшість вправ у бібліотеці використовують «{0}», деякі «{1}». Щоб короткий гриф був усюди, задай обидва.',
   'Back to the standard bars': 'Повернути стандартні грифи',
   'Standard bars. Tap if yours are lighter.': 'Стандартні грифи. Торкнися, якщо твої легші.',
-  'The last warm-up still gets the full rest before your first work set.': 'Останній розминковий підхід усе одно отримує повний відпочинок перед першим робочим.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'Заданий час діє і перед першим робочим підходом. Без таймера після останньої розминки буде повний відпочинок.',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'Днів на тиждень',
   'Hours': 'Години',

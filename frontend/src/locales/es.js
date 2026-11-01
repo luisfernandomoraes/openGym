@@ -2256,7 +2256,7 @@ export default {
   'Pick a time': 'Elegir un tiempo',
   'Rest between sides': 'Descanso entre lados',
   'Rest between warm-ups': 'Descanso entre calentamientos',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'El calentamiento es ligero, así que puede descansar menos o nada. El último sigue teniendo el descanso completo antes de tu primera serie de trabajo.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'Los calentamientos son ligeros, así que pueden descansar menos o nada. El tiempo también se aplica antes de tu primera serie de trabajo; sin temporizador, el último tiene el descanso completo.',
   // --- progress photos for any day (#557) ---
   'Add photos': 'Añadir fotos',
   'Each photo goes on the day it was taken.': 'Cada foto va al día en que se tomó.',
@@ -2348,7 +2348,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'La mayoría de los ejercicios de la biblioteca usan «{0}», unos pocos «{1}». Para una barra corta en todos, ajusta las dos.',
   'Back to the standard bars': 'Volver a las barras estándar',
   'Standard bars. Tap if yours are lighter.': 'Barras estándar. Toca si las tuyas pesan menos.',
-  'The last warm-up still gets the full rest before your first work set.': 'La última serie de calentamiento sigue teniendo el descanso completo antes de tu primera serie de trabajo.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'El tiempo también se aplica antes de tu primera serie de trabajo. Sin temporizador, el último calentamiento tiene el descanso completo.',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'Días por semana',
   'Hours': 'Horas',

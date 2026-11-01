@@ -2267,7 +2267,7 @@ export default {
   'Pick a time': 'เลือกเวลา',
   'Rest between sides': 'พักระหว่างสองข้าง',
   'Rest between warm-ups': 'พักระหว่างเซ็ตวอร์มอัพ',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'เซ็ตวอร์มอัพเบา จึงพักน้อยลงหรือไม่พักเลยก็ได้ เซ็ตสุดท้ายยังได้พักเต็มก่อนเซ็ตหลักแรก',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'วอร์มอัพเบา จึงพักน้อยลงหรือไม่พักก็ได้ เวลาที่ตั้งไว้ใช้ก่อนเซ็ตทำงานแรกด้วย หากไม่มีตัวจับเวลา วอร์มอัพสุดท้ายจะได้พักเต็มเวลา',
   // --- progress photos for any day (#557) ---
   'Add photos': 'เพิ่มรูป',
   'Each photo goes on the day it was taken.': 'แต่ละรูปจะไปอยู่ในวันที่ถ่าย',
@@ -2359,7 +2359,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'ท่าส่วนใหญ่ในคลังใช้ “{0}” บางท่าใช้ “{1}” ถ้าจะใช้บาร์สั้นทุกท่า ให้ตั้งทั้งสองอย่าง',
   'Back to the standard bars': 'กลับไปใช้บาร์มาตรฐาน',
   'Standard bars. Tap if yours are lighter.': 'บาร์มาตรฐาน แตะถ้าบาร์ของคุณเบากว่า',
-  'The last warm-up still gets the full rest before your first work set.': 'เซ็ตวอร์มอัพสุดท้ายยังได้พักเต็มก่อนเซ็ตหลักเซ็ตแรก',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'เวลาที่ตั้งไว้ใช้ก่อนเซ็ตทำงานแรกด้วย หากไม่มีตัวจับเวลา วอร์มอัพสุดท้ายจะได้พักเต็มเวลา',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'วันต่อสัปดาห์',
   'Hours': 'ชั่วโมง',

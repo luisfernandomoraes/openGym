@@ -2256,7 +2256,7 @@ export default {
   'Pick a time': 'Choisir une durée',
   'Rest between sides': 'Repos entre les côtés',
   'Rest between warm-ups': 'Repos entre les échauffements',
-  'Warm-ups are light, so they can rest less, or not at all. The last one still gets the full rest before your first work set.': 'L’échauffement est léger, il peut donc se reposer moins, voire pas du tout. Le dernier garde le repos complet avant ta première série de travail.',
+  'Warm-ups are light, so they can rest less, or not at all. A time also applies before your first work set; with no timer, the last one gets the full rest.': 'Les échauffements sont légers : ils peuvent se reposer moins, voire pas du tout. Une durée s’applique aussi avant ta première série de travail ; sans minuteur, le dernier a le repos complet.',
   // --- progress photos for any day (#557) ---
   'Add photos': 'Ajouter des photos',
   'Each photo goes on the day it was taken.': 'Chaque photo va au jour où elle a été prise.',
@@ -2348,7 +2348,7 @@ export default {
   'Most lifts in the library use “{0}”, a few use “{1}”. A short bar for all of them means setting both.': 'La plupart des exercices de la bibliothèque utilisent « {0} », quelques-uns « {1} ». Pour une barre courte partout, règle les deux.',
   'Back to the standard bars': 'Revenir aux barres standard',
   'Standard bars. Tap if yours are lighter.': 'Barres standard. Touche si les tiennes sont plus légères.',
-  'The last warm-up still gets the full rest before your first work set.': 'La dernière série d’échauffement garde le repos complet avant ta première série de travail.',
+  'A time also applies before your first work set. With no timer, the last warm-up gets the full rest.': 'Une durée s’applique aussi avant ta première série de travail. Sans minuteur, le dernier échauffement a le repos complet.',
   // --- Coach intake: days and session wheels ---
   'Days per week': 'Jours par semaine',
   'Hours': 'Heures',
