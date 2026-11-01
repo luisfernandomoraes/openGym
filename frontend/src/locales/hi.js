@@ -2588,4 +2588,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': 'सिर्फ़ इस फ़ोन के लिए। कुछ होम स्क्रीन को समझने में थोड़ा समय लगता है।',
   'The icon could not be changed.': 'आइकन बदला नहीं जा सका।',
   'Try the Halloween app icon': 'हैलोवीन ऐप आइकन आज़माएँ',
+  'Scale photo': 'तराज़ू की फ़ोटो',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'Anthropic API कुंजी के साथ, Claude आपके तराज़ू की फ़ोटो पढ़ता है। कुंजी इस फ़ोन के सुरक्षित स्टोरेज में रहती है; उसके बिना फ़ोटो फ़ोन पर ही पढ़ी जाती है।',
+  'Reading the photo…': 'फ़ोटो पढ़ी जा रही है…',
+  'Still reading — a weak signal can take a few seconds.': 'अभी पढ़ी जा रही है — कमज़ोर सिग्नल पर कुछ सेकंड लग सकते हैं।',
+  'Read from the photo — check it matches, then save.': 'फ़ोटो से पढ़ा गया — मिलान करें, फिर सहेजें।',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': 'फ़ोटो नहीं पढ़ी जा सकी। डिस्प्ले के और पास से कोशिश करें या वज़न हाथ से दर्ज करें।',
 }

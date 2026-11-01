@@ -489,6 +489,15 @@ h4.sec{
   content:'';position:absolute;inset:0;border-radius:50%;
   border:2px solid var(--orange);animation:ping 1.9s var(--ease) infinite;
 }
+/* A photo of the scale being read (BwSheet, sheets.jsx). */
+.scan-busy{opacity:.4;pointer-events:none;transition:opacity .14s ease-out}
+.scan-status{display:flex;align-items:center;gap:10px;padding:8px 10px;margin-bottom:8px;border-radius:12px;background:var(--surface);font-size:14px}
+.scan-status img{flex:none;width:44px;height:44px;border-radius:8px;object-fit:cover}
+.scan-status .icn{flex:none;font-size:16px;color:var(--label-2)}
+.scan-status .btn{flex:none;width:auto}
+.scan-t{flex:1;min-width:0;overflow-wrap:break-word}
+.scan-spin{flex:none;width:16px;height:16px;border-radius:50%;border:2px solid var(--surface-3);border-top-color:var(--acc);animation:scan-spin .8s linear infinite}
+@keyframes scan-spin{to{transform:rotate(360deg)}}
 @keyframes ping{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.45);opacity:0}}
 
 /* NOTE on every backdrop-filter pair in this file: the -webkit- line comes first and the

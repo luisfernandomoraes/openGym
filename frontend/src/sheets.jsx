@@ -47,7 +47,8 @@ import { policyFor, defaultIncrement, POLICIES_FOR, POLICY_NAME, POLICY_DESC, MA
 import { normalizeRepRange } from './lib/rep-range.js'
 import { isBackoff, backoffWeights } from './lib/backoff.js'
 import { isPyramid, normalizePyramid, normalizePyramidRest, normalizePyramidWeight, pyramidFromFlat, flatFromPyramid, pyramidLabel, PYRAMID_MAX, MAX_PYRAMID_SETS, PYRAMID_PRESETS } from './lib/pyramid.js'
-import { MOBILE, shareExport, shareExportBlob, printHtml } from './lib/mobile.js'
+import { MOBILE, shareExport, shareExportBlob, printHtml, canReadScale, readScale, scaledJpegBase64 } from './lib/mobile.js'
+import { readWeightFromPhoto } from './lib/scale-ai.js'
 import { speedUnitOf, toSpeed, fromSpeed } from './lib/speed.js'
 import { clampIncline, inclineFits, INCLINE_MAX, INCLINE_STEP } from './lib/incline.js'
 import { buildCompletedWorkout, sessionEnd } from './lib/finish-workout.js'
@@ -302,12 +303,57 @@ function WeightInput({ value, setValue, unit }) {
 }
 
 /* ============================ body weight ============================ */
+// How long a reading runs before it says it is still going.
+const SCAN_SLOW_MS = 5000
+
 function BwSheet({ required, onDone, close }) {
   const st = useStore(s => s.S)
   const unit = st.unit
   const bw = lastBW(st)
   const [v, setV] = useState(bw ? bw.w : 70)
   const [date, setDate] = useState(todayISO())
+  // Photo of the scale (iOS app only): the camera reading only fills the field, it never saves —
+  // a seven-segment display can be misread, so the person checks it and taps Save as usual.
+  // Claude reads it first when this phone has a key for it (Settings), the on-device reading
+  // when it has none, is offline, or Claude found no weight.
+  // A reading can take seconds on a gym's signal, so it says so from the moment the photo comes
+  // back: the photo itself, what is happening, and a way out. Nothing can be saved meanwhile, or
+  // the number on screen would pass for the reading. The photo stays next to the result, which
+  // is what makes "check it" possible once the phone is off the scale.
+  const [canScan, setCanScan] = useState(false)
+  const [scan, setScan] = useState(null)   // { state: 'reading' | 'slow' | 'done' | 'failed', photo }
+  const photoRef = useRef(null)
+  const scanRun = useRef(null)
+  const scanning = scan?.state === 'reading' || scan?.state === 'slow'
+  const stopScan = () => { scanRun.current?.abort(); scanRun.current = null }
+  useEffect(() => { canReadScale().then(setCanScan); return stopScan }, [])
+  useEffect(() => {
+    const photo = scan?.photo
+    return photo ? () => URL.revokeObjectURL(photo) : undefined
+  }, [scan?.photo])
+  useEffect(() => {
+    if (scan?.state !== 'reading') return
+    const tm = setTimeout(() => setScan(s => (s?.state === 'reading' ? { ...s, state: 'slow' } : s)), SCAN_SLOW_MS)
+    return () => clearTimeout(tm)
+  }, [scan?.state])
+  const onPhoto = async e => {
+    const file = e.target.files?.[0]
+    e.target.value = ''
+    if (!file) return
+    stopScan()
+    const run = new AbortController()
+    scanRun.current = run
+    setScan({ state: 'reading', photo: URL.createObjectURL(file) })
+    let w = null
+    try {
+      w = await readWeightFromPhoto(await scaledJpegBase64(file), { last: bw ? bw.w : null, unit, signal: run.signal, readOnDevice: readScale })
+    } catch { /* said below, as any other photo without a weight */ }
+    if (run.signal.aborted) return
+    scanRun.current = null
+    if (w) setV(w)
+    setScan(s => ({ ...s, state: w ? 'done' : 'failed' }))
+  }
+  const cancelScan = () => { stopScan(); setScan(null) }
   const save = () => {
     const n = Math.round((v || 0) * 10) / 10
     if (!n || n <= 0) { toast(t('Enter a valid weight')); return }
@@ -343,9 +389,27 @@ function BwSheet({ required, onDone, close }) {
           <span>{t('Date')}</span>
           <input className="field" type="date" value={date} max={todayISO()} onChange={e => setDate(e.target.value)} />
         </label>}
-    <WeightInput value={v} setValue={setV} unit={unit} />
+    <div className={scanning ? 'scan-busy' : undefined} aria-busy={scanning}>
+      <WeightInput value={v} setValue={setV} unit={unit} />
+    </div>
+    {canScan && <>
+      <input ref={photoRef} type="file" accept="image/*" capture="environment" hidden onChange={onPhoto} />
+      <div style={{ height: 8 }} />
+      {scan && <div className="scan-status" role="status">
+        <img src={scan.photo} alt="" />
+        {scanning ? <span className="scan-spin" aria-hidden="true" /> : <Icon name={scan.state === 'done' ? 'check' : 'warning'} />}
+        <span className="scan-t">{t({
+          reading: 'Reading the photo…',
+          slow: 'Still reading — a weak signal can take a few seconds.',
+          done: 'Read from the photo — check it matches, then save.',
+          failed: 'Could not read the photo. Try closer to the display, or enter the weight by hand.',
+        }[scan.state])}</span>
+        {scanning && <Button size="sm" variant="ghost" onClick={cancelScan}>{t('Cancel')}</Button>}
+      </div>}
+      {!scanning && <Button variant="ghost" icon="camera" onClick={() => photoRef.current?.click()}>{scan?.state === 'failed' ? t('Try again') : t('Scan')}</Button>}
+    </>}
     <div style={{ height: 14 }} />
-    <Button variant="primary" onClick={save}>{required ? t('Save & start workout') : t('Save')}</Button>
+    <Button variant="primary" disabled={scanning} onClick={save}>{required ? t('Save & start workout') : t('Save')}</Button>
     {required && <>
       <div style={{ height: 8 }} /><Button variant="ghost" className="dim" onClick={() => { close(); onDone && onDone(null) }}>{t('Start without weighing in')}</Button>
       <div style={{ height: 2 }} /><Button variant="ghost" className="dim" icon="swap" onClick={() => closeThenNav(close, '/workout')}>{t('Choose a different workout')}</Button>

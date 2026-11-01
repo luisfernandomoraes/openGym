@@ -2599,4 +2599,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': 'เฉพาะโทรศัพท์เครื่องนี้ หน้าจอโฮมบางแบบต้องใช้เวลาสักครู่ถึงจะเปลี่ยน',
   'The icon could not be changed.': 'เปลี่ยนไอคอนไม่ได้',
   'Try the Halloween app icon': 'ลองไอคอนแอปฮาโลวีน',
+  'Scale photo': 'รูปเครื่องชั่ง',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'เมื่อมีคีย์ Anthropic API Claude จะอ่านรูปเครื่องชั่งของคุณ คีย์จะอยู่ในที่เก็บข้อมูลที่ปลอดภัยของโทรศัพท์เครื่องนี้ หากไม่มีคีย์ โทรศัพท์จะอ่านรูปเอง',
+  'Reading the photo…': 'กำลังอ่านรูป…',
+  'Still reading — a weak signal can take a few seconds.': 'ยังอ่านอยู่ — สัญญาณอ่อนอาจใช้เวลาสักครู่',
+  'Read from the photo — check it matches, then save.': 'อ่านจากรูปแล้ว — ตรวจสอบให้ตรงกันแล้วบันทึก',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': 'อ่านรูปไม่ได้ ลองถ่ายใกล้หน้าจอมากขึ้น หรือกรอกน้ำหนักเอง',
 }

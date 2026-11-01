@@ -2581,4 +2581,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': '只限這支手機。有些主畫面要過一下才會跟上。',
   'The icon could not be changed.': '無法更換圖示。',
   'Try the Halloween app icon': '試試萬聖節 App 圖示',
+  'Scale photo': '體重計照片',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': '有 Anthropic API 金鑰時，由 Claude 讀取體重計照片。金鑰只保存在本機的安全儲存空間；沒有金鑰時，照片會在手機上辨識。',
+  'Reading the photo…': '正在讀取照片…',
+  'Still reading — a weak signal can take a few seconds.': '仍在讀取 — 訊號較弱時可能需要幾秒鐘。',
+  'Read from the photo — check it matches, then save.': '已從照片讀取 — 請核對後儲存。',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': '無法讀取照片。請靠近顯示幕重試，或手動輸入體重。',
 }

@@ -38,6 +38,7 @@ import { BUILTIN_PX } from '../lib/anim-quality.js'
 import { selfUpdates } from '../lib/channel.js'
 import { forgetCoach } from '../lib/coach-api.js'
 import { coachAvailable } from '../lib/coach.js'
+import { getScaleKey, setScaleKey, clearScaleKey } from '../lib/scale-ai.js'
 import { REST_MAX, REST_PAUSE_MIN, REST_PAUSE_MAX, fmtRest, fmtDuration } from '../lib/duration.js'
 import { starterPlanSheet, confirmSheet, importFromApp, importFromHevy, equipmentProfileSheet, plateInventorySheet, dumbbellInventorySheet, barDefaultsSheet, menuSheet } from '../sheets.jsx'
 import Icon from '../components/Icon.jsx'
@@ -555,6 +556,8 @@ export default function Settings({ page = null, find = null, via = null, entryKe
             onChange={v => update(s => { if (v) s.skipCompleted = true; else delete s.skipCompleted })} />
         </Row>
       </Section>
+      {/* The scale photo exists only on iOS (canReadScale): no key to ask for anywhere else. */}
+      {MOBILE && !android && <ScaleKeySection />}
       <Section title={t('Before and during')}>
         {/* The quick weigh-in that opens on Start (sheets.jsx startFlow, issue #137); off skips
             straight to the session. Home and Stats still log weight by hand. */}
@@ -1722,4 +1725,26 @@ function HealthConnectCard({ S, toast, android }) {
         accessory="chevron" onClick={() => openHealthConnect().catch(() => {})} />}
     </Section>
   )
+}
+
+// The Anthropic key the scale photo is read with (lib/scale-ai.js): kept in this phone's secure
+// storage, apart from the Coach's key. Without one the photo is read on the phone itself.
+function ScaleKeySection() {
+  const toast = useUI(s => s.toast)
+  const [key, setKey] = useState('')
+  const [hasKey, setHasKey] = useState(false)
+  useEffect(() => { getScaleKey().then(k => setHasKey(!!k)) }, [])
+  const save = async () => {
+    if (!key.trim()) return
+    await setScaleKey(key.trim()); setHasKey(true); setKey(''); toast(t('Saved'))
+  }
+  const remove = async () => { await clearScaleKey(); setHasKey(false) }
+  return <Section title={t('Scale photo')} footer={t('With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.')}>
+    <div style={{ padding: '8px 12px', display: 'flex', gap: 8 }}>
+      <TextField value={key} type="password" placeholder={hasKey ? '••••••••  ' + t('(saved)') : 'sk-ant-…'} autoCapitalize="none" autoCorrect="off"
+        onChange={e => setKey(e.target.value)} style={{ flex: 1 }} />
+      {key.trim() ? <Button size="sm" variant="primary" onClick={save}>{t('Save')}</Button>
+        : hasKey ? <Button size="sm" variant="ghost" onClick={remove}>{t('Remove')}</Button> : null}
+    </div>
+  </Section>
 }

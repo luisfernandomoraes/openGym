@@ -1670,6 +1670,12 @@ export const PT_BR_OVERRIDES = {
   'App icon': 'Ícone do app',
   'Just for this phone. Some home screens take a moment to catch up.': 'Só para este celular. Algumas telas iniciais demoram um pouco para perceber.',
   'Try the Halloween app icon': 'Experimente o ícone de Halloween do app',
+  'Scale photo': 'Foto da balança',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'Com uma chave da API da Anthropic, o Claude lê a foto da sua balança. A chave fica no armazenamento seguro deste celular; sem ela, a foto é lida no próprio celular.',
+  'Reading the photo…': 'Lendo a foto…',
+  'Still reading — a weak signal can take a few seconds.': 'Ainda lendo — com sinal fraco pode levar alguns segundos.',
+  'Read from the photo — check it matches, then save.': 'Lido da foto — confira se bate e salve.',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': 'Não foi possível ler a foto. Tente mais perto do visor ou digite o peso.',
 }
 
 export default { ...pt, ...PT_BR_OVERRIDES }

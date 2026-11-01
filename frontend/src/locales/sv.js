@@ -2635,4 +2635,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': 'Bara för den här telefonen. Vissa hemskärmar behöver en stund på sig att hänga med.',
   'The icon could not be changed.': 'Ikonen gick inte att byta.',
   'Try the Halloween app icon': 'Testa Halloween-appikonen',
+  'Scale photo': 'Foto av vågen',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'Med en API-nyckel från Anthropic läser Claude fotot av din våg. Nyckeln stannar i telefonens säkra lagring; utan den läses fotot på telefonen.',
+  'Reading the photo…': 'Läser fotot…',
+  'Still reading — a weak signal can take a few seconds.': 'Läser fortfarande: med svag signal kan det ta några sekunder.',
+  'Read from the photo — check it matches, then save.': 'Avläst från fotot: kontrollera att det stämmer och spara sedan.',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': 'Det gick inte att läsa fotot. Försök närmare displayen eller ange vikten för hand.',
 }

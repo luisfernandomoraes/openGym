@@ -2588,4 +2588,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': 'Yalnızca bu telefon için. Bazı ana ekranların fark etmesi biraz sürer.',
   'The icon could not be changed.': 'Simge değiştirilemedi.',
   'Try the Halloween app icon': 'Cadılar Bayramı uygulama simgesini dene',
+  'Scale photo': 'Tartı fotoğrafı',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'Anthropic API anahtarıyla Claude tartının fotoğrafını okur. Anahtar bu telefonun güvenli depolamasında kalır; anahtar yoksa fotoğraf telefonda okunur.',
+  'Reading the photo…': 'Fotoğraf okunuyor…',
+  'Still reading — a weak signal can take a few seconds.': 'Hâlâ okunuyor — zayıf sinyalde birkaç saniye sürebilir.',
+  'Read from the photo — check it matches, then save.': 'Fotoğraftan okundu — eşleştiğini kontrol et, sonra kaydet.',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': 'Fotoğraf okunamadı. Ekrana daha yakından dene veya kiloyu elle gir.',
 }

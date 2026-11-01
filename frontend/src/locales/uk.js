@@ -2585,4 +2585,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': 'Лише для цього телефона. Деяким домашнім екранам треба хвилинка, щоб помітити.',
   'The icon could not be changed.': 'Не вдалося змінити значок.',
   'Try the Halloween app icon': 'Спробуй гелловінський значок застосунку',
+  'Scale photo': 'Фото ваг',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'З ключем Anthropic API Claude зчитує фото твоїх ваг. Ключ зберігається в захищеному сховищі цього телефона; без нього фото розпізнається на телефоні.',
+  'Reading the photo…': 'Читаємо фото…',
+  'Still reading — a weak signal can take a few seconds.': 'Ще читаємо — за слабкого сигналу це може зайняти кілька секунд.',
+  'Read from the photo — check it matches, then save.': 'Зчитано з фото — перевір значення й збережи.',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': 'Не вдалося прочитати фото. Спробуй ближче до дисплея або введи вагу вручну.',
 }

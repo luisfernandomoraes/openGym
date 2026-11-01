@@ -2588,4 +2588,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': 'Solo per questo telefono. Alcune schermate Home ci mettono un attimo ad accorgersene.',
   'The icon could not be changed.': 'Non è stato possibile cambiare l’icona.',
   'Try the Halloween app icon': 'Prova l’icona di Halloween',
+  'Scale photo': 'Foto della bilancia',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'Con una chiave API di Anthropic, Claude legge la foto della tua bilancia. La chiave resta nell’archivio sicuro di questo telefono; senza, la foto viene letta sul telefono.',
+  'Reading the photo…': 'Lettura della foto…',
+  'Still reading — a weak signal can take a few seconds.': 'Lettura in corso — con poco segnale può richiedere qualche secondo.',
+  'Read from the photo — check it matches, then save.': 'Letto dalla foto — controlla che corrisponda, poi salva.',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': 'Impossibile leggere la foto. Riprova più vicino al display o inserisci il peso a mano.',
 }

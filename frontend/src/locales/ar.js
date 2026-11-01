@@ -2643,4 +2643,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': 'لهذا الهاتف فقط. بعض الشاشات الرئيسية تحتاج لحظة لتلحق.',
   'The icon could not be changed.': 'تعذّر تغيير الأيقونة.',
   'Try the Halloween app icon': 'جرّب أيقونة التطبيق الخاصة بالهالوين',
+  'Scale photo': 'صورة الميزان',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'باستخدام مفتاح Anthropic API، يقرأ Claude صورة ميزانك. يبقى المفتاح في التخزين الآمن لهذا الهاتف؛ وبدونه تُقرأ الصورة على الهاتف.',
+  'Reading the photo…': 'جارٍ قراءة الصورة…',
+  'Still reading — a weak signal can take a few seconds.': 'ما زالت القراءة جارية — قد تستغرق الإشارة الضعيفة بضع ثوانٍ.',
+  'Read from the photo — check it matches, then save.': 'تمت القراءة من الصورة — تحقق من تطابقها ثم احفظ.',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': 'تعذرت قراءة الصورة. حاول من مسافة أقرب إلى الشاشة، أو أدخل الوزن يدويًا.',
 }

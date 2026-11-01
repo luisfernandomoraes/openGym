@@ -2588,4 +2588,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': '이 휴대폰에만 적용돼요. 홈 화면에 따라 바뀌는 데 잠깐 걸릴 수 있어요.',
   'The icon could not be changed.': '아이콘을 바꾸지 못했어요.',
   'Try the Halloween app icon': '핼러윈 앱 아이콘 써 보기',
+  'Scale photo': '체중계 사진',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'Anthropic API 키가 있으면 Claude가 체중계 사진을 읽습니다. 키는 이 휴대폰의 보안 저장소에만 보관되며, 키가 없으면 휴대폰에서 사진을 읽습니다.',
+  'Reading the photo…': '사진을 읽는 중…',
+  'Still reading — a weak signal can take a few seconds.': '아직 읽는 중입니다 — 신호가 약하면 몇 초 걸릴 수 있습니다.',
+  'Read from the photo — check it matches, then save.': '사진에서 읽었습니다 — 값이 맞는지 확인한 뒤 저장하세요.',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': '사진을 읽지 못했습니다. 화면에 더 가까이에서 찍거나 체중을 직접 입력하세요.',
 }

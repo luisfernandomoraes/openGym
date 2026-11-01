@@ -331,6 +331,40 @@ export async function printHtml(html, name, { paper = 'a4', footer } = {}) {
   await Print.printHtml({ html, name, paper, ...(footer ? { footer } : {}) })
 }
 
+// Read the text on a photo of a scale's display with the local `ScaleReader` plugin — Apple's
+// on-device Vision, so iOS only (registered by ios ScaleReaderPlugin.m; Android has no such
+// plugin and never offers the button). Returns Vision's lines as-is; lib/scale-reading.js
+// picks the weight out of them.
+export async function canReadScale() {
+  if (!MOBILE) return false
+  try {
+    const { Capacitor } = await import('@capacitor/core')
+    return Capacitor.getPlatform() === 'ios'
+  } catch { return false }
+}
+
+export async function readScale(image) {
+  const { registerPlugin } = await import('@capacitor/core')
+  const ScaleReader = registerPlugin('ScaleReader')
+  const { lines } = await ScaleReader.read({ image })
+  return Array.isArray(lines) ? lines : []
+}
+
+// A 12 MP photo is ~5 MB of base64 across the bridge for digits that stay legible at a fraction
+// of that: the long side is capped at 1600 px. createImageBitmap applies the photo's EXIF
+// orientation, so the pixels handed over are already upright. The same image goes to Claude
+// (lib/scale-ai.js) when the phone has a key for it.
+export async function scaledJpegBase64(file, maxSide = 1600) {
+  const bmp = await createImageBitmap(file, { imageOrientation: 'from-image' })
+  const k = Math.min(1, maxSide / Math.max(bmp.width, bmp.height))
+  const canvas = document.createElement('canvas')
+  canvas.width = Math.round(bmp.width * k)
+  canvas.height = Math.round(bmp.height * k)
+  canvas.getContext('2d').drawImage(bmp, 0, 0, canvas.width, canvas.height)
+  bmp.close?.()
+  return canvas.toDataURL('image/jpeg', 0.9).split(',')[1]
+}
+
 // "Auto-backup on changes" (Settings): a dated snapshot dropped into Documents/openGym/ —
 // visible in Files (iOS) / a file manager (Android), unlike the private mirror nativeSave keeps
 // — so whatever the user points at that folder (a sync app, a manual copy) always has something

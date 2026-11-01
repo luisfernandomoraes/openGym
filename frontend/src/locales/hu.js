@@ -2591,4 +2591,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': 'Csak ezen a telefonon. Néhány kezdőképernyőnek kell egy pillanat, mire észreveszi.',
   'The icon could not be changed.': 'Nem sikerült megváltoztatni az ikont.',
   'Try the Halloween app icon': 'Próbáld ki a halloweeni alkalmazásikont',
+  'Scale photo': 'Mérleg fotója',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'Anthropic API-kulccsal Claude olvassa le a mérleged fotóját. A kulcs a telefon biztonságos tárolójában marad; nélküle a fotót a telefon olvassa le.',
+  'Reading the photo…': 'A fotó olvasása…',
+  'Still reading — a weak signal can take a few seconds.': 'Még olvassa — gyenge jelnél ez néhány másodpercig tarthat.',
+  'Read from the photo — check it matches, then save.': 'Leolvasva a fotóról — ellenőrizd, majd mentsd.',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': 'Nem sikerült leolvasni a fotót. Próbáld közelebbről, vagy add meg kézzel a súlyt.',
 }

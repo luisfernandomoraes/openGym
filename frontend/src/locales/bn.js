@@ -2667,4 +2667,10 @@ export default {
   'Just for this phone. Some home screens take a moment to catch up.': 'শুধু এই ফোনের জন্য। কিছু হোম স্ক্রিন বুঝতে একটু সময় নেয়।',
   'The icon could not be changed.': 'আইকন বদলানো গেল না।',
   'Try the Halloween app icon': 'হ্যালোইন অ্যাপ আইকন চেষ্টা করুন',
+  'Scale photo': 'স্কেলের ছবি',
+  'With an Anthropic API key, Claude reads the photo of your scale. The key stays in this phone’s secure storage; without it, the photo is read on the phone.': 'Anthropic API কী থাকলে Claude আপনার স্কেলের ছবি পড়ে। কী এই ফোনের সুরক্ষিত স্টোরেজে থাকে; কী না থাকলে ছবি ফোনেই পড়া হয়।',
+  'Reading the photo…': 'ছবি পড়া হচ্ছে…',
+  'Still reading — a weak signal can take a few seconds.': 'এখনও পড়া হচ্ছে — দুর্বল সিগন্যালে কয়েক সেকেন্ড লাগতে পারে।',
+  'Read from the photo — check it matches, then save.': 'ছবি থেকে পড়া হয়েছে — মিলিয়ে দেখে সংরক্ষণ করুন।',
+  'Could not read the photo. Try closer to the display, or enter the weight by hand.': 'ছবি পড়া যায়নি। ডিসপ্লের আরও কাছ থেকে চেষ্টা করুন বা ওজন নিজে লিখুন।',
 }
